@@ -11,7 +11,7 @@ class IEEE80211bTransmitterDualMode:
     - Helper to compute SNR between float and fixed outputs
     """
     def __init__(self, sps=8, rrc_span_chips=6, rrc_alpha=0.35,
-                 data_bits=16, coeff_bits=16, acc_bits=32):
+                 data_bits=10, coeff_bits=12, acc_bits=24):
         # TX params
         self.sps = int(sps)                 # samples per chip
         self.rrc_span_chips = int(rrc_span_chips)
